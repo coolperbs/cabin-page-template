@@ -1,0 +1,26 @@
+;define('<%$MODULE_PATH%>',function(require, exports, module){
+    var page;
+
+    page = VuePage({
+        source: [
+            '<%$MODULE_PATH%>.tpl',
+            '<%$MODULE_PATH%>.css',
+        ],
+        el: 'pages-<%$PROJECT_NAME%>-<%PAGE_NAME%>',
+        data: function () {
+            return {
+            }
+        },
+        components:{
+        },
+        mounted(){
+            this.render();
+        },
+        methods: {
+            render(){
+            },
+        },
+    });
+
+    return page;
+});
