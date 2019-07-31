@@ -1,12 +1,12 @@
-;define('<%$MODULE_PATH%>',function(require, exports, module){
+;define('<%= $MODULE_PATH%>',function(require, exports, module){
     var page;
 
     page = VuePage({
         source: [
-            '<%$MODULE_PATH%>.tpl',
-            '<%$MODULE_PATH%>.css',
+            '<%= $MODULE_PATH%>.tpl',
+            '<%= $MODULE_PATH%>.css',
         ],
-        el: 'pages-<%$PROJECT_NAME%>-<%$PAGE_NAME%>',
+        el: 'pages-<%= $PROJECT_NAME%>-<%= $PAGE_NAME%>',
         data: function () {
             return {
             }
